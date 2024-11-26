@@ -1,0 +1,292 @@
+<!--library.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulBliss - Your Library</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <img src="/assets/logo.png" alt="SoulBliss Logo" class="logo">
+            <span class="brand-name">SoulBliss</span>
+            <nav class="nav-menu">
+                <div class="nav-item" data-page="home" onclick="window.location.href='index.html'">Home</div>
+                <div class="nav-item active" data-page="library">Your Library</div>
+                <div class="nav-item" data-page="create-playlist" onclick="window.location.href='createplaylist.html'">Create Playlist</div>
+                <div class="nav-item" data-page="liked-songs" onclick="window.location.href='likedSongs.html'">Liked Songs</div>
+                <div class="nav-item" data-page="DashBoard" onclick="window.location.href='DashBoard.html'">DashBoard</div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar-extended">
+                    <span class="search-icon"></span>
+                    <input type="text" placeholder="Search in your library">
+                </div>
+            </header>
+
+            <style>
+                /* Updated header and search bar styles */
+                .header {
+                    padding: 1rem 2rem;
+                    display: flex;
+                    align-items: center;
+                    background: transparent;
+                }
+        
+                .search-bar-extended {
+                    position: relative;
+                    width: 100%;
+                    max-width: none;
+                }
+        
+                .search-bar-extended input {
+                    width: 100%;
+                    padding: 1rem 3rem;
+                    border: none;
+                    border-radius: 2rem;
+                    background: rgba(0, 0, 0, 0.05);
+                    font-size: 1rem;
+                    transition: background 0.3s ease;
+                }
+        
+                .search-bar-extended input:focus {
+                    outline: none;
+                    background: rgba(0, 0, 0, 0.08);
+                }
+        
+                .search-icon {
+                    position: absolute;
+                    left: 1rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #666;
+                }
+            </style>
+
+            <!-- Library Content -->
+            <section id="library-page" class="page active">
+                <h2 class="section-title">Your Library</h2>
+                <div class="songs-grid">
+                    <!-- Song Card Example -->
+                    <div class="song-card">
+                        <img src="assets/Cover/1.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-info">
+                            <h4 class="song-title">Song Title 1</h4>
+                            <p class="artist-name">Artist Name</p>
+                        </div>
+                        <button class="play-button">▶</button>
+                    </div>
+                    <!-- More song cards -->
+                    <div class="song-card">
+                        <img src="assets/Cover/2.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-info">
+                            <h4 class="song-title">Song Title 2</h4>
+                            <p class="artist-name">Another Artist</p>
+                        </div>
+                        <button class="play-button">▶</button>
+                    </div>
+                    <!-- Add more songs as needed -->
+                    <div class="song-card">
+                        <img src="assets/Cover/3.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-info">
+                            <h4 class="song-title">Song Title 3</h4>
+                            <p class="artist-name">Artist Name</p>
+                        </div>
+                        <button class="play-button">▶</button>
+                    </div>
+                    <!-- More song cards -->
+                    <div class="song-card">
+                        <img src="assets/Cover/4.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-info">
+                            <h4 class="song-title">Song Title 4</h4>
+                            <p class="artist-name">Another Artist</p>
+                        </div>
+                        <button class="play-button">▶</button>
+                    </div>
+                    <div class="song-card">
+                        <img src="assets/Cover/5.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-info">
+                            <h4 class="song-title">Song Title 5</h4>
+                            <p class="artist-name">Artist Name</p>
+                        </div>
+                        <button class="play-button">▶</button>
+                    </div>
+                    <!-- More song cards -->
+                    <div class="song-card">
+                        <img src="assets/Cover/6.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-info">
+                            <h4 class="song-title">Song Title 6</h4>
+                            <p class="artist-name">Another Artist</p>
+                        </div>
+                        <button class="play-button">▶</button>
+                    </div>
+                    <div class="song-card">
+                        <img src="assets/Cover/7.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-info">
+                            <h4 class="song-title">Song Title 7</h4>
+                            <p class="artist-name">Artist Name</p>
+                        </div>
+                        <button class="play-button">▶</button>
+                    </div>
+                    <!-- More song cards -->
+                    <div class="song-card">
+                        <img src="assets/Cover/8.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-info">
+                            <h4 class="song-title">Song Title 8</h4>
+                            <p class="artist-name">Another Artist</p>
+                        </div>
+                        <button class="play-button">▶</button>
+                    </div>
+                    <div class="song-card">
+                        <img src="assets/Cover/9.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-info">
+                            <h4 class="song-title">Song Title 9</h4>
+                            <p class="artist-name">Artist Name</p>
+                        </div>
+                        <button class="play-button">▶</button>
+                    </div>
+                    <!-- More song cards -->
+                    <div class="song-card">
+                        <img src="assets/Cover/10.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-info">
+                            <h4 class="song-title">Song Title 10</h4>
+                            <p class="artist-name">Another Artist</p>
+                        </div>
+                        <button class="play-button">▶</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Player Bar -->
+    <div class="player-bar">
+        <!-- Now Playing Section -->
+        <div class="now-playing">
+            <img src="path-to-track-cover.jpg" alt="Track Cover">
+            <div class="track-info">
+                <h4>Track Title</h4>
+                <p>Artist Name</p>
+            </div>
+            <button id="likeButton" class="like-button">♡</button>
+        </div>
+
+
+<!-- Player Controls -->
+<div class="player-controls">
+    <button class="control-button shuffle">↑↓</button>
+    <button class="control-button previous">❙◀</button>
+    <button class="control-button play">▶</button>
+    <button class="control-button pause">❙❙</button>
+    <button class="control-button next">▶❙</button>
+    <button class="control-button repeat">↻</button>
+</div>
+
+<style>
+.player-controls button {
+    color: #C4184B;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.control-button.pause {
+    display: none;
+}
+
+.playing .control-button.play {
+    display: none;
+}
+
+.playing .control-button.pause {
+    display: inline-block;
+}
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const playerControls = document.querySelector('.player-controls');
+        const playButton = playerControls.querySelector('.control-button.play');
+        const pauseButton = playerControls.querySelector('.control-button.pause');
+        
+        // Flag to track playing state
+        let isPlaying = false;
+        
+        // Function to toggle play/pause
+        function togglePlayPause() {
+            isPlaying = !isPlaying;
+            playerControls.classList.toggle('playing', isPlaying);
+            
+            // Here you can add your audio playing logic
+            if (isPlaying) {
+                // Add code to play audio
+                console.log('Playing audio');
+            } else {
+                // Add code to pause audio
+                console.log('Pausing audio');
+            }
+        }
+        
+        // Add click event listeners
+        playButton.addEventListener('click', togglePlayPause);
+        pauseButton.addEventListener('click', togglePlayPause);
+        
+        // Add click handlers for other buttons
+        const shuffleButton = playerControls.querySelector('.control-button.shuffle');
+        const previousButton = playerControls.querySelector('.control-button.previous');
+        const nextButton = playerControls.querySelector('.control-button.next');
+        const repeatButton = playerControls.querySelector('.control-button.repeat');
+        
+        shuffleButton.addEventListener('click', () => {
+            console.log('Shuffle clicked');
+            // Add your shuffle functionality here
+        });
+        
+        previousButton.addEventListener('click', () => {
+            console.log('Previous clicked');
+            // Add your previous track functionality here
+        });
+        
+        nextButton.addEventListener('click', () => {
+            console.log('Next clicked');
+            // Add your next track functionality here
+        });
+        
+        repeatButton.addEventListener('click', () => {
+            console.log('Repeat clicked');
+            // Add your repeat functionality here
+        });
+    });
+    </script>
+    
+    
+            <div class="player-right">
+                <div class="volume-control">
+                    <div class="volume-container">
+                    </div>
+                    <button id="volumeButton" class="volume-button">🔊</button>
+                    <div class="volume-slider">
+                        <div class="volume-progress"></div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <span class="time current">0:00</span>
+                    <div class="progress-slider">
+                        <div class="progress"></div>
+                    </div>
+                    <span class="time total">0:00</span>
+                </div>
+            </div>
+        </div>
+        <script src="/js/script.js"></script>
+    </body>
+    </html>

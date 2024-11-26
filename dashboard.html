@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Soulbliss</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .category-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .playlist-section {
+            margin-top: 2rem;
+        }
+        
+        .playlist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .playlist-card {
+            position: relative;
+            aspect-ratio: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .playlist-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .playlist-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <img src="/assets/logo.png" alt="SoulBliss Logo" class="logo">
+            <span class="brand-name">SoulBliss</span>
+            <nav class="nav-menu">
+                <div class="nav-item" data-page="home" onclick="window.location.href='index.html'">Home</div>
+                <div class="nav-item" data-page="library" onclick="window.location.href='library.html'">Your Library</div>
+                <div class="nav-item" data-page="create-playlist" onclick="window.location.href='createplaylist.html'">Create Playlist</div>
+                <div class="nav-item" data-page="liked-songs" onclick="window.location.href='likedSongs.html'">Liked Songs</div>
+                <div class="nav-item active" data-page="DashBoard">DashBoard</div>
+            </nav>
+        </aside>
+        
+        <main class="content">
+            <div class="dashboard-grid">
+                <div class="category-card">
+                    <h2>Daily Meditation</h2>
+                    <p>Start your day with mindfulness</p>
+                    <div class="playlist-section">
+                        <div class="playlist-grid">
+                            <div class="playlist-card">
+                                <img src="/api/placeholder/200/200" alt="Morning Meditation">
+                                <div class="playlist-info">
+                                    <h3>Morning Peace</h3>
+                                    <p>15 min • Guided</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <h2>Focus Sounds</h2>
+                    <p>Enhance your productivity</p>
+                    <div class="playlist-section">
+                        <div class="playlist-grid">
+                            <div class="playlist-card">
+                                <img src="/api/placeholder/200/200" alt="Deep Focus">
+                                <div class="playlist-info">
+                                    <h3>Deep Work</h3>
+                                    <p>60 min • Ambient</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <h2>Sleep Stories</h2>
+                    <p>Drift into peaceful sleep</p>
+                    <div class="playlist-section">
+                        <div class="playlist-grid">
+                            <div class="playlist-card">
+                                <img src="/api/placeholder/200/200" alt="Sleep Story">
+                                <div class="playlist-info">
+                                    <h3>Ocean Dreams</h3>
+                                    <p>30 min • Story</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <div class="player-controls">
+            <div class="now-playing">
+                <img src="/api/placeholder/60/60" alt="Current Track" class="track-thumbnail">
+                <div class="track-info">
+                    <h4 class="track-title">No track playing</h4>
+                    <p class="track-artist">Select a track to begin</p>
+                </div>
+            </div>
+            
+            <div class="player-buttons">
+                <button class="btn-previous">Previous</button>
+                <button class="btn-play">Play</button>
+                <button class="btn-next">Next</button>
+            </div>
+            
+            <div class="volume-controls">
+                <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

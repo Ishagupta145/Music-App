@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Dashboard - SoulBliss</title>
+  <link rel="stylesheet" href="css/artist-style.css">
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <img src="/assets/logo.png" alt="SoulBliss Logo" class="logo">
+    <span class="brand-name">SoulBliss</span>
+    <nav class="nav-menu">
+        <div class="navi-item" data-page="dashboard">Dashboard</div>
+        <div class="navi-item" data-page="music-library">Music Library</div>
+        <div class="navi-item" data-page="analytics">Analytics</div>
+        <div class="navi-item" data-page="revenue">Revenue</div>
+        <div class="navi-item" data-page="settings">Settings</div>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <!-- Header -->
+    <header class="header">
+      <h1>Welcome, Artist!</h1>
+      <button class="upload-button">Upload New Track</button>
+    </header>
+
+    <!-- Quick Stats Section -->
+    <section id="dashboard" class="dashboard-overview">
+      <div class="stats-card">
+        <h3>Total Plays</h3>
+        <p>102,450</p>
+      </div>
+      <div class="stats-card">
+        <h3>Followers</h3>
+        <p>5,430</p>
+      </div>
+      <div class="stats-card">
+        <h3>Total Revenue</h3>
+        <p>$2,140</p>
+      </div>
+    </section>
+
+    <!-- Music Library Section -->
+    <section id="music-library" class="music-library">
+      <h2>Music Library</h2>
+      <div class="track-list">
+        <div class="track">
+          <h4>Track Title 1</h4>
+          <p>Plays: 10,000</p>
+        </div>
+        <div class="track">
+          <h4>Track Title 2</h4>
+          <p>Plays: 7,500</p>
+        </div>
+        <!-- More track items -->
+      </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section id="analytics" class="analytics">
+      <h2>Track Analytics</h2>
+      <canvas id="playsChart" width="400" height="200"></canvas>
+    </section>
+
+    <!-- Revenue Section -->
+    <section id="revenue" class="revenue">
+      <h2>Revenue</h2>
+      <p>Total Earnings: $2,140</p>
+      <button class="withdraw-button">Request Payout</button>
+    </section>
+  </main>
+
+  <script src="js/artist-scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulBliss</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+   <style>
+    .options {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 30px;
+      }
+  
+      .option-btn {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        color: #ffffff;
+        background: #E91E63; /* Customize button color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+  
+      .option-btn:hover {
+        background: #D81B60;
+      }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <!-- Logo and Title -->
+            <img src="/assets/logo.png" alt="SoulBliss Logo" class="logo">
+            <h1 class="app-title" style="color: #C4184B;">SoulBliss</h1>
+            <p class="subtitle">Tune Into Your Bliss</p>
+            <p class="continue-text">Continue with</p>
+            
+        
+
+            <div class="options">
+                <button class="option-btn" onclick="window.location.href='index.html'">Listener</button>
+                <button class="option-btn" onclick="window.location.href='artist.html'">Artist</button>
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
